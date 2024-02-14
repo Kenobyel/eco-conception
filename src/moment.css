@@ -1,0 +1,87 @@
+.container {
+  background-color: #251715;
+}
+
+.four-images-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+  height: 100%;
+}
+
+.four-images-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-height: 470px;
+}
+
+.four-image1:hover, .four-image1:active {
+  transform: translate(50%, 50%) scale(2);
+}
+
+@media (prefers-reduced-motion : no-preference ) {
+  .four-image2:hover, .four-image2:active {
+    transform: translate(-50%, 50%) scale(2);
+}
+}
+
+@media (prefers-reduced-motion : no-preference ) {
+  .four-image3:hover, .four-image3:active {
+    transform: translate(50%, -50%) scale(2);
+}
+}
+
+@media (prefers-reduced-motion : no-preference ) {
+  .four-image4:hover, .four-image4:active {
+    transform: translate(-50%, -50%) scale(2);
+}
+}
+
+.wine-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* Label styling for better user interaction */
+.four-images-container label {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  padding: 6px 16px;
+  padding-left: 2rem;
+  margin: 0.4rem 0.4rem 0.4rem 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 98;
+  font-family: "OpenSans";
+}
+
+#enable-transition {
+  margin: 1rem 1.6rem;
+  position: absolute;
+  z-index: 99;
+}
+
+#enable-transition:not(:checked) ~ .four-image1 {
+  transition: transform 0.5s ease-in-out;
+}
+
+#enable-transition:not(:checked) ~ .four-image2 {
+  transition: transform 0.5s ease-in-out;
+}
+
+#enable-transition:not(:checked) ~ .four-image3 {
+  transition: transform 0.5s ease-in-out;
+}
+
+#enable-transition:not(:checked) ~ .four-image4 {
+  transition: transform 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 900px) {
+  .four-images-container {
+    width: 100%;
+    height: 50%;
+  }
+}

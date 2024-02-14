@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nous-trouver.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Restaurant Le Pavillon Gourmand</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-navbar">
+            <a class="navbar-logo-link" href="accueil.html"><img loading="lazy" class="navbar-logo" alt="logo" src="../ressources/logo.svg"></a>
+            <h1 class="navbar-title">Le pavillon gourmand</h1>
+        </div>
+        <div class="right-navbar">
+            <a href="moment.html"><p>Un moment</p></a>
+            <a href="lieu.html"><p>Un lieu</p></a>
+            <a href="nous-trouver.html"><p class="active-navbar-link">Nous trouver</p></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="paragraphe acces-theme">
+            <div class="description">
+                <h1>ACCÈS</h1>
+                <p>13 rue Jean Mermoz<br>74940 Annecy-le-Vieux, FRANCE</p>
+            </div>
+            <a class="map-link" href="https://maps.app.goo.gl/9rrBnwptTowACxtF6">
+                <img loading="lazy" alt="carte des environs" src="../ressources/screen_maps.avif">
+                <div class="map-overlay">
+                    <p class="map-text">Cliquez sur la carte pour ouvrir Google Maps</p>
+                </div>
+            </a>
+        </div>
+        <div class="paragraphe contact-theme">
+            <div class="contact-container">
+                <form>
+                    <p>Les champs obligatoires sont marqués d'un astérisque</p>
+                    <div class="form-input-container">
+                        <input type="text" id="surname" placeholder="Nom" required>
+                        <input type="text" id="name" placeholder="Prénom" required>
+                        <input type="text" id="phone" pattern="[0-9]{10}" placeholder="Téléphone" required>
+                        <input type="text" id="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="E-mail *" required>
+                    </div>
+                    <textarea id="message" placeholder="Votre message *"required></textarea><br>
+                    <div class="submit-container">
+                        <input type="submit" value="nous contacter">
+                    </div>
+                </form>
+            </div>
+            <div class="contact-container">
+                <div class="infos">
+                    <h1>NOUS CONTACTER</h1>
+                    <p>Tél. : +33 (0)4 50 23 07 90</p>
+                    <h1>SERVICES</h1>
+                    <div class="horaires">
+                        <p class="horaire-row">
+                            Mardi<br>
+                            Mercredi<br>
+                            Jeudi<br>
+                            Vendredi<br>
+                            Samedi<br>
+                            Dimanche<br>
+                        </p>
+                        <p class="horaire-row">
+                            soir<br>
+                            midi & soir<br>
+                            midi & soir<br>
+                            midi & soir<br>
+                            midi & soir<br>
+                            midi<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_container">
+            <div class="paternaires">
+                <img loading="lazy" class="paternaires-logo" alt="logo relais-chateaux" src="../ressources/relais-chateaux.svg">
+                <img loading="lazy" class="paternaires-logo" alt="logo michelin" src="../ressources/michelin-2023.svg">
+                <img loading="lazy" class="paternaires-logo" alt="logo gault-millau" src="../ressources/gault-millau.svg">
+                <img loading="lazy" class="paternaires-logo" alt="logo ecotable" src="../ressources/ecotable.svg">
+            </div>
+    
+            <div class="mention-legales">
+                <p>le pavillon gourmand</p>
+                <p>mentions legales</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../ressources/76ebb484-c1af-4e95-a46e-853f00d41124_reportage-portraits-cuisine-salle-46.avif") center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.accueil-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 2rem;
+  bottom: 4rem;
+}
+
+.accueil-container h1 {
+  font-family: "openSans";
+  color: #fff;
+  margin: 6px 0;
+}

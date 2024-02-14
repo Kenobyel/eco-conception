@@ -1,0 +1,171 @@
+@media print {
+  .contact-form,
+  .map-link,
+  .map-overlay,
+  .submit-container,
+  h1:nth-of-type(2) {
+      display: none;
+  }
+}
+
+.container {
+  background-color: #1E1E1E !important;
+}
+
+.acces-theme {
+  background-color: #1E1E1E;
+  margin-top: 5rem;
+}
+
+.map-link {
+  height: 100%;
+  width: 50%;
+}
+
+.map-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.horaires {
+  display: flex;
+  flex-direction: row;
+}
+
+.horaire-row {
+  width: 160px;
+  line-height: 30px;
+  margin: 0;
+  margin-right: 1rem;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.form-input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+}
+
+input[type=text] {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 6px 16px;
+  height: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 1rem 0px;
+  padding: 6px 16px;
+  height: 4rem;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+  padding: 6px 16px;
+  width: 50%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+textarea {
+  width: 100% !important;
+  resize: none;
+  height: 12rem !important;
+}
+
+.submit-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+}
+
+.map-link {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.map-text {
+  color: black;
+}
+
+.contact-theme {
+  background-color: #000;
+  height: fit-content !important;
+}
+
+.infos {
+  margin-left: 1rem;
+}
+
+.contact-container {
+  width: 50%;
+  padding: 4rem 2rem 2rem 2rem;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 900px) {
+  .acces-theme {
+    margin-top: 8rem;
+  }
+
+  .map-link {
+    height: 50%;
+    width: 100%;
+  }
+
+  .contact-container {
+    width: 100%;
+    height: 50%;
+  }
+
+  .infos {
+    margin-left: 0;
+  }
+
+  .infos h1 {
+    text-align: center;
+  }
+
+  .horaires {
+    justify-content: center;
+  }
+  .horaires p {
+    margin-right: 0;
+  }
+}
